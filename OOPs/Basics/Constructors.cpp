@@ -21,7 +21,16 @@ public:
     //     cout << "Default Constructor!" << endl;
     // }
 
-    FoodItem(int id, string name, string description, double price, float rating) : id(id), name(name), description(description), price(price), rating(rating) {
+    // FoodItem(int id, string name, string description, double price, float rating) : id(id), name(name), description(description), price(price), rating(rating) {
+    //     cout << "Parameterized Constructor!" << endl;
+    // }
+
+    FoodItem(int id, string name, string description, double price, float rating) {
+        this->id = id;
+        this->name = name;
+        this->description = description;
+        this->price = price;
+        this->rating = rating;
         cout << "Parameterized Constructor!" << endl;
     }
     
