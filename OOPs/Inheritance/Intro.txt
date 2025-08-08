@@ -1,0 +1,36 @@
+Inheritance in C++ is a fundamental concept in object-oriented programming (OOP) that allows one class (called the derived class) to acquire the properties and behaviors (methods) of another class (called the base class). This mechanism helps in creating a hierarchical relationship between classes, promoting code reuse and reducing redundancy.
+
+-> Key Points of Inheritance:
+1. Base Class and Derived Class:
+   - A base class provides common attributes and methods.
+   - A derived class inherits these features and can add or modify them to suit specific needs.
+
+2. Types of Inheritance:
+   - Single Inheritance: A derived class inherits from one base class.
+   - Multiple Inheritance: A derived class inherits from more than one base class.
+   - Multilevel Inheritance: A class inherits from another derived class, forming a chain.
+   - Hierarchical Inheritance: Multiple classes inherit from a single base class.
+
+3. Access Control:
+   - Public inheritance: Public members of the base class become public members of the derived class.
+   - Protected inheritance: Public members of the base class become protected members in the derived class.
+   - Private inheritance: Public members of the base class become private members in the derived class.
+
+-> Theoretical Example:
+
+- Imagine a Vehicle class, which has attributes like speed and fuel capacity. The Car class, derived from the Vehicle class, will inherit these attributes. However, it can also have additional properties, like the number of doors, unique to cars.
+
+- If we further derive a ElectricCar class from Car, this class inherits all the features of Car (like speed, fuel capacity, and the number of doors) and Vehicle (such as basic vehicle attributes), but it can also add specific attributes like battery capacity.
+
+Through inheritance, the ElectricCar class doesn't need to redefine common vehicle behaviors (e.g., starting the engine) but can focus on its unique characteristics.
+
+-> Benefits:
+- Code Reusability: Instead of redefining common attributes and methods, inheritance allows derived classes to reuse the functionality of base classes.
+- Extensibility: New classes can easily extend base classes to add or modify specific functionality without affecting the base class.
+- Maintainability: Changes in the base class can automatically propagate to derived classes, reducing duplication and making code maintenance easier.
+
+Inheritance helps in modeling real-world hierarchies and relationships between objects, making C++ programming more modular and easier to understand.
+
+parent - child
+base - derived
+super - sub
