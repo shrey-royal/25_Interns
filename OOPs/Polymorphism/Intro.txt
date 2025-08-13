@@ -1,0 +1,14 @@
+polymorphism: It is a way of using same code in multiple ways.
+
+There are 2 types of polymorphism:
+    1. compile-time polymorphism
+          i. constructor overloading
+         ii. method overloading
+        iii. operator overloading
+
+    2. run-time polymorphism
+         i. method overriding
+
+Overloading: When we have something (constructor, method, operator) in the same class and same name but with different parameters
+
+Overriding: When we have something (constructor, method, operator) with same name and same parameters but in different classes (both classes will be inherited)
