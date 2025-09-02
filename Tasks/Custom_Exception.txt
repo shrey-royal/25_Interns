@@ -1,0 +1,14 @@
+Tasks:
+
+--> Multiple Division Operations:
+
+   - Scenario: Extend the code to perform multiple division operations based on user input. Prompt the user to enter the number of division operations they want to perform and then input pairs of 'x' and 'y' values for each operation. Handle division by zero errors and invalid input values gracefully using custom exceptions.
+
+   - Objective: Modify the code to allow multiple division operations and handle exceptions for each operation individually.
+
+   - Tasks:
+     - Prompt the user to enter the number of division operations they want to perform.
+     - For each operation, allow the user to input 'x' and 'y' values.
+     - Implement error checking to ensure that 'y' is not zero and that both 'x' and 'y' are valid integers for each operation.
+     - Use exception handling to catch and handle division by zero errors and input-related errors for each operation separately.
+     - Display informative messages for each exception, indicating which operation caused the error.
