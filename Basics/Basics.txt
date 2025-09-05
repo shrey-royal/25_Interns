@@ -1,0 +1,81 @@
+C   : Procedure Oriented Programming Language
+C++ : Semi-Object Oriented Programming Language
+Java: Pure Object Oriented Programming Language
+
+Java is a platform independent language. It means that we can write and compile the java code in one platform (eg Windows) and can execute the class in any other supported platform eg (Linux,Solaris,etc).
+
+Java is a platform also which means that we can write once and run anywhere.
+
+
+Source Code : .java
+Byte Code   : .class    (Intermediate Code)
+
+to compile the java code we use javac command : javac <filename>.java
+ex: javac Hello.java
+
+to run the java class we use java command : java <classname>
+ex: java Hello
+
+
+There are some rules to save the file name in java.
+
+1. The file name should be same as the public class name.
+2. The Class name should start with a capital letter and should be in camel case and also doesn't contain any special characters or spaces.
+
+class HighSchoolStudent{}  //valid
+class High_School_Student{} //valid
+class High School Student{} //invalid
+class highSchoolStudent{}  //invalid
+class HighschoolStudent{}  //invalid
+
+
+In Every java program there should be atleast one public class.
+
+
+filename: A.java
+public class A {}
+public class B {main}   //error: class B is public, should be declared in a file named B.java
+
+
+Source Code (java file) : Basic.java
+
+javac Basic.java -> Basic.class  (Byte Code)
+
+java Basic (classname) -> Output
+
+Access Modifiers : public, private, protected, default
+1. public : The class, method, variable, constructor declared as public can be accessed from anywhere.
+2. private : The class, method, variable, constructor declared as private can be accessed only within the class.
+3. protected : The class, method, variable, constructor declared as protected can be accessed within the class and outside the class but through inheritance only.
+4. default : The class, method, variable, constructor declared as default can be accessed within the class and outside the class but within the package (same directory) only.
+
+without importing any packagename we can't use the classes of that package.
+
+//c
+struct student {
+    int rollno;
+    char name[20];
+    float marks;
+};
+
+//cPP
+class student {
+public:
+    int rollno;
+    char name[20];
+    float marks;
+};
+
+//jAVA
+class Student {
+    private int rollno;
+    protected String name;
+    public float marks;
+}
+
+System.out.println("Hello World");
+
+System -> class
+out    -> object of PrintStream class
+println() -> method of PrintStream class
+"Hello World" -> String parameter
